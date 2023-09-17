@@ -20,16 +20,16 @@ main ul li {
 a {text-decoration: none;}
 
 header, footer {
-	background-color: #aaa;
+	background-color: #eee;
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header img {width: 200px;}
+header img {width: 75px; float: left;}
 
-header h1 {margin-left: 1rem;}
+header h1, header h2 {margin: 1rem; text-align: center;}
 
 
 main {
@@ -42,7 +42,7 @@ h1 {
 }
 
 nav {
-	background-color: navy;
+	background-color: #0078BD;
 	margin: 0 auto;
     max-width: 800px;
 }
@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 .active {
-	color: yellow;
+	color: #F6B801;
 }
 
 main h2 {
@@ -79,14 +79,14 @@ div#css-grid {
 }
 
 section.card {
-    border: 1px solid navy;
+    border: 1px solid #0078BD;
     border-radius: 3px;
     max-width: 600px;
     margin: 10px;
 }
 
 section.card h3 {
-    background-color: navy;
+    background-color: #0078BD;
     color: white;
     padding: 10px;
     text-align: center;
