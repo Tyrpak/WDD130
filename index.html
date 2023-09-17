@@ -4,28 +4,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Balázs Agócs | WDD 130</title>
+        <meta name="description" content="Course assignment portal for the course WDD130 - Web Frontend Development made by Balázs Agócs">
+        <meta name="author" content="Balázs Agócs">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+        <link href="styles/base.css" rel="stylesheet">
+        <link href="styles/larger.css" rel="stylesheet">
     </head>
     <body>
-    <header>    
-        <nav>
-            <a href="#">Home</a>             
-            <a href="wwr/index.html">White Water Rafting Website</a>
-            <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
-            <a href="missionarytours/index.html">WD130 - Missionary Tours Website</a>
-        </nav>
-    </header>
-    <main>
+    <header>      
+        <img src="images/profile.webp" alt="Portrait of Balázs Agócs">
         <h1>Balázs Agócs | WDD 130</h1>
-        <img src="images/profile.webp" alt="Portrait of Balázs Agócs" width="200" style="width: 200px; float: left; margin-right: 10px;">
-        <p>My name is Balázs, and I'm from Hungary. I am living in the capitol, Budapest.</p>
-        <p>You say "Balázs", like you say the "a" in "want" and the "ázs" is like the french "age" in for example "frommage". :)<br>UTF-8 is one of the greatest things for Hungarians, because you don't have to use "&#38;aacute" anymore.</p>
-        <p>I'm 46 years old, I have made my first webpage in university, when rotating animated skulls and flames were the coolest things.</p>
-        <p>I chose Web Programming, because I want to write my own webpages and code. Currenty I can only modify others code and play around with templates built by others. I have been stuck at the same intermediate level with webpage making for years.<br>My current job description is IT Support Helpdesk Agent. But I also never learned IT, I just live by my experiences as a user.<br>I would like to learn both and be better at them, to help others get their own websites and to help them with their IT problems.</p>
-        <p>My hobbies are playing Warhammer 40k (tabletop game with miniature plastic models), sightseeing as a tourist and helping the missionaries learn Hungarian.</p>
-        <p>I'm a fresh, new and enthusiastic member of the church for 3 years now. It has changed my life to the positive, and it keeps changing it, with every visit to the temple, with every institute class I take and with every question answered in prayer or in the general conference.</p>
+    </header> 
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>WDD130: Web Frontend Development</h2>
+        <hr>
+        <div id="css-grid">
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li><a href="#">Placeholder</a></li>
+                <li><a href="#">Placeholder</a></li>
+                <li><a href="#">Placeholder</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather</p>
+            <p>Number of Visits</p>
+            <p>etc.</p>
+        </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2023 - Balázs Agócs, Hungary</p>
+        <p>&copy;<span id="year"></span> - Balázs Agócs, Hungary&nbsp;</p>
+        <p>Last modified on: <span id="lastModified"></span></p>
     </footer>
+    <script type="text/javascript" src="scripts/getDates.js"> </script>
     </body>
 </html>   
