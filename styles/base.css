@@ -27,10 +27,17 @@ header, footer {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header img {width: 200px;}
+header img {width: 200px; height: 200px; }
 
-header h1 {margin-left: 1rem;}
+header h1 {display: inline; margin-left: 1rem;}
 
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
 
 main {
 	max-width: 800px;
