@@ -55,7 +55,7 @@ header span {grid-column: span 2; text-align: right;}
 }
 
 nav {
-	background-color: #025DAE;
+	background-color: #0257AE;
 	margin: 0 auto;
     max-width: 800px;
 }
@@ -71,7 +71,7 @@ nav a {
 	color: #fff;
 	text-align: center;
 	padding: 1rem;
-	border: 1px solid #025DAE;
+	border: 1px solid #0257AE;
 }
 
 nav a:hover {
@@ -86,9 +86,9 @@ nav a:hover {
 /* small view navigation */
 #menu {
 	font-size: 1.5rem;
-	border: 1px solid #025DAE;
+	border: 1px solid #0257AE;
 	padding: 3px 7px 6px;
-	background-color: #025DAE;
+	background-color: #0257AE;
 	color: #fff;
 	position: relative;
 	top: 0.5rem;
@@ -107,7 +107,7 @@ nav a:hover {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: #025DAE;
+	background-color: #0257AE;
 	color: #fff;
 }
 .navigation li {
@@ -171,12 +171,12 @@ main {
 
 main div#hero {
 	background-image: url("../images/pmkik.webp");
-	background-color: #025DAE;
+	background-color: #0257AE;
 	height: 180px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: solid 1px #025DAE;
+	border: solid 1px #0257AE;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -191,14 +191,14 @@ div#css-grid {
 }
 
 section.card {
-    border: 1px solid #025DAE;
+    border: 1px solid #0257AE;
     border-radius: 3px;
     max-width: 600px;
     margin: 10px;
 }
 
 section.card h3 {
-    background-color: #025DAE;
+    background-color: #0257AE;
     color: white;
     padding: 10px;
     text-align: center;
@@ -206,6 +206,7 @@ section.card h3 {
 
 section.card#current h3 {
 	background-color: #F6B801;	
+	color:#000;
 }
 
 section.card#spotlight {
@@ -214,6 +215,7 @@ section.card#spotlight {
 
 section.card#spotlight h3 {
 	background-color: #4CB034;	
+	color:#000;
 }
 
 section.card#spotlight img {
