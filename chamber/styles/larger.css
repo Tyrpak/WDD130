@@ -59,4 +59,8 @@
         background-image: url("../images/pmkik.webp");
         height: 360px;
     }
+
+    footer #info, footer #disclaimer {
+        grid-column: span 1;
+    }
 }

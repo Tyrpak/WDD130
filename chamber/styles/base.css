@@ -159,11 +159,6 @@ nav a:hover {
 
 /* main */
 
-main h2 {
-    margin-top: 10px;
-    
-}
-
 main {
 	max-width: 800px;
 	margin: 0 auto;
@@ -173,16 +168,20 @@ main div#hero {
 	background-image: url("../images/pmkik.webp");
 	background-color: #0257AE;
 	height: 180px;
-	display: flex;
+	display: grid;
 	align-items: center;
 	justify-content: center;
 	border: solid 1px #0257AE;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-main div#hero h2 {
+main div#hero h2, main div#hero a {
 	color: #fff;
 	text-align: center;
+}
+
+main div#hero a  {
+    
 }
 
 div#css-grid {
@@ -258,7 +257,7 @@ footer #disclaimer {
 	margin: auto 0;
 }
 
-footer #copyright, footer #last-modified {
+footer #info, footer #disclaimer, footer #copyright, footer #last-modified {
 	grid-column: span 2;
 }
 
