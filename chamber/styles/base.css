@@ -149,7 +149,7 @@ nav a:hover {
 
 
 .stuff {
-	margin: .5m;
+	margin: .5em;
 	border: 1px solid rgba(0,0,0,.1);
 	background-color: #F6B801;
 	max-width: 580px;
@@ -205,11 +205,23 @@ section.card h3 {
 }
 
 section.card#current h3 {
-	background-color: #DA251C;	
+	background-color: #F6B801;	
+}
+
+section.card#spotlight {
+	grid-column: span 2;	
+}
+
+section.card#spotlight h3 {
+	background-color: #4CB034;	
+}
+
+section.card#spotlight img {
+	width: 100%;	
 }
 
 section.card#weather h3 {
-	background-color: #4CB034;	
+	background-color: #DA251C;
 }
 
 section.card ul {
