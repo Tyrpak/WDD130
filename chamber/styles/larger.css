@@ -1,0 +1,62 @@
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	
+    /*header img {width: 200px; height: 294px; float: left;}*/
+
+    nav {max-width: none;}
+
+    nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+    div#css-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    section.card {
+        max-width: none;
+        width: 90%;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    main div#hero {
+        background-image: url("../images/pmkik.webp");
+        height: 360px;
+    }
+}
