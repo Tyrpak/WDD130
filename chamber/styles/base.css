@@ -235,3 +235,30 @@ section.card p {
     list-style-type: none;
     padding: 10px;
 }
+
+footer {
+	background-color: #F6B801;	
+	color:#000;
+}
+
+footer .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 auto;
+    max-width: 705px;
+	grid-gap: 1rem;
+}
+
+footer #info ul {
+	list-style-type: none;
+}
+
+footer #disclaimer {
+	text-align: center;
+	margin: auto 0;
+}
+
+footer #copyright, footer #last-modified {
+	grid-column: span 2;
+}
+
