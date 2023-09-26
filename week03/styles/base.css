@@ -1,0 +1,218 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Serif 4', serif;
+}
+
+h1, h2, h3, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+main ul li {
+	font-family: 'Source Serif 4', serif;
+}
+
+a {text-decoration: none;}
+
+header, footer {
+	background-color: #aaa;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header img {width: 200px; height: 200px; }
+
+header h1 {display: inline; margin-left: 1rem;}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: navy;
+	margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+	list-style-type: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+}
+
+nav a:hover {
+	border: 1px solid #fff;
+}
+
+.active {
+	color: yellow;
+}
+
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid #0078BD;
+	padding: 3px 7px 6px;
+	background-color: navy;
+	color: #fff;
+	position: relative;
+	top: 0.5rem;
+	right: -0.5rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: navy;
+	color: #fff;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	background-color: #aaa;
+	color: #000;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "*";
+	color: #fff;
+	margin-top: 1px;
+	margin-right: 3px;
+}
+
+.active:hover:before {
+	content: "*";
+	color: #000;
+}
+
+
+.stuff {
+	margin: .5em;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+	
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+}
+
+
+
+main h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+div#css-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section.card {
+    border: 1px solid navy;
+    border-radius: 3px;
+    max-width: 600px;
+    margin: 10px;
+}
+
+section.card h3 {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+section.card ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+section.card p {
+    list-style-type: none;
+    padding: 10px;
+}

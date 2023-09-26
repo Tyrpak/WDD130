@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Balázs Agócs - WDD 230 - Lazyload</title>
+        <meta name="description" content="WDD 230 course assignment Lazyload made by Balázs Agócs">
+        <meta name="author" content="Balázs Agócs">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+4:opsz@8..60&display=swap" rel="preload" as="style"
+        onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
+        <link href="styles/base.css" rel="stylesheet">
+        <link href="styles/larger.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="WDD 230 course assignment Lazyload by Balázs Agócs">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://tyrpak.github.io/wdd230/">
+        <meta property="og:image" content="https://tyrpak.github.io/wdd230/images/facebook-banner.png">
+    </head>
+    <body>
+        
+    <header>   
+        <h1>Lazyload</h1>
+    </header> 
+    <main>
+        <picture><img src="images/lazyload1.webp" alt="1." loading="lazy" width="400" height="630"></picture>
+        <picture><img src="images/lazyload2.webp" alt="2." loading="lazy" width="400" height="630"></picture>
+        <picture><img src="images/lazyload3.webp" alt="3." loading="lazy" width="400" height="630"></picture>
+        <picture><img src="images/lazyload4.webp" alt="4." loading="lazy" width="400" height="630"></picture>
+        <picture><img src="images/lazyload5.webp" alt="5." loading="lazy" width="400" height="630"></picture>
+        <picture><img src="images/lazyload6.webp" alt="6." loading="lazy" width="400" height="630"></picture>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> - Balázs Agócs, Hungary&nbsp;</p>
+        <p>Last modified on: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"> </script>
+    </body>
+</html>   
