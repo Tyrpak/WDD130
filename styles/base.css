@@ -39,8 +39,39 @@ header h1 {display: inline; margin-left: 1rem;}
 	cursor: pointer;
 }
 
+div.hero {
+	max-width: 640px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4477B3);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: .5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:'Roboto', sans-serif;
+	text-align: center;
+}
+
 main {
-	max-width: 800px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -150,39 +181,6 @@ nav a:hover {
 	
 }
 
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-	h1 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
-	
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
-
-	#menu {
-		display: none; /* hide hamburger button */
-	}
-
-	.navigation {
-		flex-direction: row;
-	}
-
-	.navigation li {
-		display: block;
-		flex: 1 1 100%;
-	}
-	
-	.stuff {
-		margin: 1rem auto;
-	}
-}
-
-
-
 main h2 {
     margin-top: 10px;
     text-align: center;
@@ -215,4 +213,19 @@ section.card ul {
 section.card p {
     list-style-type: none;
     padding: 10px;
+}
+
+span.visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+main iframe {
+    grid-column: span 2;
+	margin-top: 10px;
+    text-align: center;
+	width: 100%;
+	height: auto;
+	min-height: 300px;
 }

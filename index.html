@@ -39,6 +39,13 @@
         </ul>
     </nav>
     
+    <div class="hero">        
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 640px)">
+            <img src="images/hero-large.webp" alt="Freiberg Germany Temple" loading="lazy" width="960" height="573"></picture>
+        <div class="herolabel"><p>Freiberg Germany Temple</p></div>
+    </div>
+
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
@@ -46,7 +53,7 @@
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
-                <li>Week 1: <a href="#">Placeholder</a></li>
+                <li>Week 1: <a href="week01/holygrail.html">Holy Grail</a>, <a href="week01/media-query.html">Media Query</a></li>
                 <li>Week 2: <a href="week02/design.html">Web Design Principles</a>, <a href="https://codepen.io/Tyrpak/pen/yLGpRvB">Hamburger Menu</a>, <a href="week02/bom.html">BOM Manipulation</a></li>
                 <li>Week 3: <a href="week03/landscape.webp">Landscape</a>, <a href="week03/lazyload.html">Lazyload</a>, <a href="week03/bom.html">BOM</a>, <a href="week03/responsive-images.html">Responsive Images</a></li>
             </ul>
@@ -54,16 +61,20 @@
         <section class="card">
             <h3>Information</h3>
             <p>Weather</p>
-            <p>Number of Visits</p>
+            <p>Number of Visits: <span class="visits"></span></p>
             <p>etc.</p>
         </section>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.0505782665785!2d19.065770831060046!3d47.48203039294479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc567d7c8569%3A0xf8ce4615023cf2ab!2sBudapest%2C%20L%C3%B3nyay%20u.%2043%2C%201093!5e0!3m2!1sen!2shu!4v1695940740971!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
+
+    
     <footer>
         <p>&copy;<span id="year"></span> - Balázs Agócs, Hungary&nbsp;</p>
         <p>Last modified on: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js"> </script>
+    <script src="scripts/getVisits.js"> </script>
     <script src="scripts/hamburger.js"> </script>
     <script src="scripts/dark-mode.js"> </script>
     </body>
