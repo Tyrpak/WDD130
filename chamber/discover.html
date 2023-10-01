@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber of Commerce of Érd, Hungary</title>
+        <meta name="description" content="Portal site for Chamber of Commerce of Érd, Hungary">
+        <meta name="author" content="Balázs Agócs">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+4:opsz@8..60&display=swap" rel="preload" as="style"
+        onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="Chamber of Commerce of Érd, Hungary">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://tyrpak.github.io/wdd230/chamber/">
+        <meta property="og:image" content="https://tyrpak.github.io/wdd230/chamber/images/facebook-banner.png">
+    </head>
+    <body>
+        
+    <header>   
+        <div class="container">
+            <img src="images/erd.webp" alt="Crest of the City of Érd">
+            <h1>Chamber of Commerce of Érd</h1>
+            <span>Placeholder for Social Media icons</span>
+        </div>
+    </header> 
+    <button id="menu" aria-label="Menu"></button>
+    <nav>   
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Current Events</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="css-grid">
+            <div id="left-column">
+                <section class="left-section">
+                    <h2>List of events</h2>
+                    <ul>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                        <li>Placeholder</li>
+                    </ul>
+                </section>
+                <section class="left-section">
+                    <h2>Calendar</h2>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=epiccharactergenerator%40gmail.com&ctz=Europe%2FBudapest" style="border: 0" width="220" height="220" frameborder="0" scrolling="no"></iframe>
+                </section>
+
+            </div>
+            <div id="right-column">
+                <div class="right-pic">        
+                    <picture>
+                        <source srcset="images/1-small.webp" media="(max-width: 600px)">
+                        <img src="images/1-large.webp" alt="Picture of Érd" width="800" height="400">
+                    </picture>
+                    <div class="right-pic-caption"><p>Picture of Érd</p></div>
+                </div>
+                <div class="right-pic">        
+                    <picture>
+                        <source srcset="images/2-small.webp" media="(max-width: 600px)">
+                        <img src="images/2-large.webp" alt="Picture of Érd" width="800" height="400">
+                    </picture>
+                    <div class="right-pic-caption"><p>Picture of Érd</p></div>
+                </div><div class="right-pic">        
+                    <picture>
+                        <source srcset="images/3-small.webp" media="(max-width: 600px)">
+                        <img src="images/3-large.webp" alt="Picture of Érd" width="800" height="400">
+                    </picture>
+                    <div class="right-pic-caption"><p>Picture of Érd</p></div>
+                </div><div class="right-pic">        
+                    <picture>
+                        <source srcset="images/4-small.webp" media="(max-width: 600px)">
+                        <img src="images/4-large.webp" alt="Picture of Érd" width="800" height="400">
+                    </picture>
+                    <div class="right-pic-caption"><p>Picture of Érd</p></div>
+                </div><div class="right-pic">        
+                    <picture>
+                        <source srcset="images/5-small.webp" media="(max-width: 600px)">
+                        <img src="images/5-large.webp" alt="Picture of Érd" width="800" height="400">
+                    </picture>
+                    <div class="right-pic-caption"><p>Picture of Érd</p></div>
+                </div><div class="right-pic">        
+                    <picture>
+                        <source srcset="images/6-small.webp" media="(max-width: 600px)">
+                        <img src="images/6-large.webp" alt="Picture of Érd" width="800" height="400">
+                    </picture>
+                    <div class="right-pic-caption"><p>Picture of Érd</p></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div id="info">
+                <ul>
+                    <li>Official name: Chamber of Commerce of the City of Érd</li>
+                    <li>Address: 2030 Érd, Alsó utca 3.</li>
+                    <li>Phone number: +36 23 123 456</li>
+                    <li>Email address: info@coc-erd.hu</li>
+                </ul>
+            </div>
+            <p id="disclaimer">This is a project for the WDD 230 course!<br>The information is made up, any similarities with real organizations are unintentional.</p>
+            <p id="copyright">&copy;<span id="year"></span> - Balázs Agócs, Hungary&nbsp;</p>
+            <p id="last-modified">Last modified on: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"> </script>
+    <script src="scripts/getVisits.js"> </script>
+    <script src="scripts/hamburger.js"> </script>
+    </body>
+</html>   

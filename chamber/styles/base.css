@@ -187,7 +187,21 @@ main div#hero a  {
 div#css-grid {
     display: grid;
     grid-template-columns: 1fr;
+	gap: 10px;
 }
+
+.left-section h2 {
+	margin: 10px;
+}
+
+
+div.right-pic {
+	padding: 10px;
+}
+
+div.right-pic img {border-radius: 10px; width: 100%; height: auto; max-width: 600px}
+
+div.right-pic-caption p {text-align: center;}
 
 section.card {
     border: 1px solid #0257AE;

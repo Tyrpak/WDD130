@@ -1,5 +1,5 @@
 /* large view navigation ************************************/
-@media (min-width: 37.5em) {
+@media (min-width: 640px) {
 	h1 {
 		font-size: 2.5rem;
 		margin-left: 0;
@@ -27,10 +27,6 @@
 	.stuff {
 		margin: 1rem auto;
 	}
-}
-
-/* Larger Views ******************************/
-@media (min-width: 640px) {
 	
     /*header img {width: 200px; height: 294px; float: left;}*/
 
@@ -45,8 +41,12 @@
 
     div#css-grid {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
+
+	div.right-pic img {max-width: 800px}
+
+	div.right-pic:hover img {box-shadow: 0 0 30px #0257AE;}
 
     section.card {
         max-width: none;
@@ -63,4 +63,8 @@
     footer #info, footer #disclaimer {
         grid-column: span 1;
     }
+}
+
+@media (min-width: 1008px) {
+	div.right-pic img {width: 800px}
 }
