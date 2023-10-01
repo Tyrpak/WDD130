@@ -203,6 +203,11 @@ div.right-pic img {border-radius: 10px; width: 100%; height: auto; max-width: 60
 
 div.right-pic-caption p {text-align: center;}
 
+.left-section iframe {
+	border-width: 0;
+	overflow: hidden;
+}
+
 section.card {
     border: 1px solid #0257AE;
     border-radius: 3px;
