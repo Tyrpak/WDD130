@@ -44,7 +44,7 @@
         grid-template-columns: 1fr 2fr;
     }
 
-	div.right-pic img {max-width: 800px}
+	div.right-pic img {width: 800px}
 
 	div.right-pic:hover img {box-shadow: 0 0 30px #0257AE;}
 
@@ -64,7 +64,7 @@
         grid-column: span 1;
     }
 }
-
+/*
 @media (min-width: 1008px) {
 	div.right-pic img {width: 800px}
-}
+}*/
