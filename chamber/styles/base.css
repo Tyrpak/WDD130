@@ -180,9 +180,9 @@ main div#hero h2, main div#hero a {
 	text-align: center;
 }
 
-main div#hero a  {
+/*main div#hero a {
     
-}
+}*/
 
 div#css-grid {
     display: grid;
