@@ -1,0 +1,27 @@
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	
+    header img {width: 300px; height: 300px;}
+
+    nav {max-width: none;}
+
+    nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+    div#css-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    section.card {
+        max-width: none;
+        width: 90%;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}

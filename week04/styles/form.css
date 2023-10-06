@@ -1,0 +1,101 @@
+:root { 
+	--blue: navy;
+    --red: #9c2c13;
+	--serif: 'Source Serif 4', serif;
+	--roboto: 'Roboto', sans-serif;
+}
+
+/*----------- FORM --------------*/
+div#formmessage {
+    color: var(--red);
+    font-size: .8rem;
+    text-align: center;
+}
+
+form {
+    accent-color: var(--blue);
+}
+
+form legend {
+    font-family: var(--roboto);
+}
+
+form label {
+    font-family: var(--serif);
+}
+
+form fieldset {
+    margin: 2rem;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 21.5rem;
+}
+
+form legend {
+    margin: 0 1rem;
+    color: var(--blue);
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--red);
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+form input#rating {
+    -webkit-appearance: auto;
+    padding: 0;
+}
+
+form label.top:required {
+    border-left: 6px solid red;
+}
+
+form label.top:required:valid {
+    border-left: 6px solid green;
+}
+
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+    font-size: .8rem;
+}
+
+form input.submitBtn {
+    border: 1px solid var(--red);
+    border-radius: 1rem;
+    background-color: var(--red);
+    color: white;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    color: var(--red);
+    background-color: white;
+}
+
+p.record {
+    margin: 2rem 0;
+    text-align: center;
+}

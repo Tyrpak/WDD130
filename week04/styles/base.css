@@ -1,7 +1,9 @@
-
 :root { 
 	--bord: 1px solid #aaa;
+	--serif: 'Source Serif 4', serif;
+	--roboto: 'Roboto', sans-serif;
 }
+
 
 * {
 	margin: 0;
@@ -9,61 +11,227 @@
 	box-sizing: border-box;
 }
 
-
-
 body {
-	font-family: 'Source Serif 4', serif;
+	font-family: var(--serif);
 }
 
-caption { 
-	caption-side: bottom; 
-	margin-top: 10px;
-	font-size: smaller;
+h1, h2, h3, li {
+    font-family: var(--roboto);
 }
 
-tbody td {
-    font-family: 'Roboto', sans-serif;
+main ul li {
+	font-family: var(--serif);
 }
 
+a {text-decoration: none;}
 
-table{
-	border-collapse:collapse;
-	margin-left: 1em;
-	margin-top: 1em;
+header, footer {
+	background-color: #aaa;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-td {
-	padding: 10px;
+header img {width: 200px; height: 200px; }
+
+header h1 {display: inline; margin-left: 1rem;}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+div.hero {
+	max-width: 640px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4477B3);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: .5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family: var(--roboto);
 	text-align: center;
 }
 
-thead {
-	background-color: black;
-	color: white;
+main {
+	max-width: 960px;
+	margin: 0 auto;
 }
 
-thead tr:last-child td:not(:first-child) {
-	background-color: #333;
+h1 {
+	font-size: 2rem;
 }
 
-tbody td {
-	border-top: var(--bord) ;
-	border-left: var(--bord);
+nav {
+	background-color: navy;
+	margin: 0 auto;
+    max-width: 800px;
 }
 
-tbody td:last-child {
-	border-right: var(--bord);
+nav ul {
+	list-style-type: none;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-tbody tr:last-child td {
-	border-bottom: var(--bord);
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
 }
 
-tbody tr:nth-child(even) {
-background-color: #ccc;
+nav a:hover {
+	border: 1px solid #fff;
 }
 
-thead {
-	background-color: black;
-	color: white;
+.active {
+	color: yellow;
+}
+
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid #0078BD;
+	padding: 3px 7px 6px;
+	background-color: navy;
+	color: #fff;
+	position: relative;
+	top: 0.5rem;
+	right: -0.5rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: navy;
+	color: #fff;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	background-color: #aaa;
+	color: #000;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "*";
+	color: #fff;
+	margin-top: 1px;
+	margin-right: 3px;
+}
+
+.active:hover:before {
+	content: "*";
+	color: #000;
+}
+
+
+.stuff {
+	margin: .5em;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+	
+}
+
+main h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+div#css-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section.card {
+    border: 1px solid navy;
+    border-radius: 3px;
+    max-width: 600px;
+    margin: 10px;
+}
+
+section.card h3 {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+section.card ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+section.card p {
+    list-style-type: none;
+    padding: 10px;
+}
+
+span.visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+main iframe {
+    grid-column: span 2;
+	margin-top: 10px;
+    text-align: center;
+	width: 100%;
+	height: auto;
+	min-height: 300px;
 }
