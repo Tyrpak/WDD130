@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Balázs Agócs - WDD 230 - Web Frontend Development</title>
+        <title>Contact Form for WDD 230 course made by Balázs Agócs</title>
         <meta name="description" content="Form for WDD 230 course made by Balázs Agócs">
         <meta name="author" content="Balázs Agócs">
         <link rel="stylesheet" href="styles/normalize.css">
@@ -44,10 +44,10 @@
                 <div id="formmessage"></div>
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label class="top">Username* <input type="text" name="username" id="username" required></label>
-                    <label class="top">Password* <input type="password" pattern="[A-Za-z0-9]{8}" name="password" id="password" required></label>
-                    <label class="top">Password repeated for confirmation* <input type="password" pattern="[A-Za-z0-9]{8}" name="password2" id="password2" required></label>
-                    <label class="top">Email* <input type="email" name="email" id="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
+                    <label class="top">Username* <input type="text" name="username" id="username" title="Please enter your username" required></label>
+                    <label class="top">Password* <input type="password" pattern="[A-Za-z0-9]{8}" name="password" id="password" title="Please enter your password" required></label>
+                    <label class="top">Password repeated for confirmation* <input type="password" pattern="[A-Za-z0-9]{8}" name="password2" id="password2" title="Please repeat your password" required></label>
+                    <label class="top">Email* <input type="email" name="email" id="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid BYUI email address" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Page Rating</legend>

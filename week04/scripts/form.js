@@ -21,7 +21,7 @@ pass2.addEventListener("focusout", checkSame);
 function checkSame() {
 	if (pass1.value !== pass2.value) {
         message.style.display = "block";
-		message.textContent = "❗Key Phrases DO NOT MATCH!";
+		message.textContent = "The Passwords DO NOT MATCH!";
 		message.style.visibility = "show";
 		pass2.style.backgroundColor = "#fff0f3";
 		pass2.value = "";
