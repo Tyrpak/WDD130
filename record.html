@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Balázs Agócs - WDD 230 - Web Frontend Development</title>
+        <meta name="description" content="Form for WDD 230 course made by Balázs Agócs">
+        <meta name="author" content="Balázs Agócs">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+4:opsz@8..60&display=swap" rel="preload" as="style"
+        onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
+        <link href="styles/base.css" rel="stylesheet">
+        <link href="styles/larger.css" rel="stylesheet">
+        <link href="styles/form.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="Form for WDD 230 course made by Balázs Agócs">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://tyrpak.github.io/wdd230/">
+        <meta property="og:image" content="https://tyrpak.github.io/wdd230/images/facebook-banner.png">
+    </head>
+    <body>
+        <header>   
+            <div id="mode">
+                ☑️
+            </div>   
+            <img src="images/profile.webp" alt="Portrait of Balázs Agócs">
+            <h1>Balázs Agócs</h1>
+        </header> 
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+           
+            <ul class="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../chamber/index.html">Chamber</a></li>
+                <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form.html" class="active">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Thank You for Your Registration!</h1>
+            <p class="record">Your information has been recorded.</p>
+        </main>    
+        <footer>
+            <p>&copy;<span id="year"></span> - Balázs Agócs, Hungary&nbsp;</p>
+            <p>Last modified on: <span id="lastModified"></span></p>
+        </footer>
+    <script src="scripts/getDates.js"> </script>
+    <script src="scripts/form.js"> </script>
+    <script src="scripts/hamburger.js"> </script>
+    <script src="scripts/dark-mode.js"> </script>
+    </body>
+</html>   
