@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chamber of Commerce of Érd, Hungary</title>
-        <meta name="description" content="Portal site for Chamber of Commerce of Érd, Hungary">
+        <title>Join the Chamber of Commerce of Érd, Hungary</title>
+        <meta name="description" content="Join the Chamber of Commerce of Érd, Hungary">
         <meta name="author" content="Balázs Agócs">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="icon" href="favicon.ico">
-        <meta property="og:title" content="Chamber of Commerce of Érd, Hungary">
+        <meta property="og:title" content="Join the Chamber of Commerce of Érd, Hungary">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://tyrpak.github.io/wdd230/chamber/">
         <meta property="og:image" content="https://tyrpak.github.io/wdd230/chamber/images/facebook-banner.png">
@@ -39,8 +39,8 @@
     </nav>
     <main>
         <div id="hero">
-            <h2>Welcome! <br>How may we help You?</h2>
-            <a href="#" class="cta">You can contact us by clicking here!</a>
+            <h2>Join the Chamber of Commerce of Érd!</h2>
+            <p class="cta">Please fill out the form below,<br>and we will contact you shortly!</p>
         </div>
         <div id="css-grid">
             <div id="left-column">
@@ -53,7 +53,7 @@
                         <label class="applicant">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@\.$" title="Please enter a valid email address" required></label>
                         <label class="applicant">Phone* <input type="tel" name="tel" id="tel" placeholder="1235551234" title="Please enter your phone number" required></label>
                         <label class="applicant">Name of the Organization* <input type="text" name="organization" id="organization" title="Please enter the name of your organization" required></label>
-                        <label class="applicant">Description of the Organization <input type="text" name="organization-description" id="organization-description" title="Please enter a description of your organization"></label>
+                        <label class="applicant">Description of the Organization <input type="textarea" name="organization-description" id="organization-description" title="Please enter a description of your organization"></label>
                     </fieldset>
                     <fieldset class="membership">
                         <legend class="membership">Membership Level</legend>
@@ -62,8 +62,9 @@
                         <label class="radio"><input type="radio" name="audience" value="silver"> Silver</label>
                         <label class="radio"><input type="radio" name="audience" value="gold"> Gold</label>
                     </fieldset>
-                    <input type="local-datetime" name="timestamp" id="timestamp">
+                    <input type="hidden" name="timestamp" id="timestamp">
                     <input type="submit" value="Join the Chamber of Commerce of Érd" class="submitBtn">
+                </form>
             </div>
     
             <div id="right-column">
@@ -87,6 +88,11 @@
         </div>
     </footer>
     <script src="scripts/getDates.js"> </script>
+    <script>
+        var timestamp = document.querySelector('#timestamp');
+        var date = Date.now();
+        timestamp.value = date;
+    </script>
     <script src="scripts/hamburger.js"> </script>
     </body>
 </html>   

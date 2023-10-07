@@ -197,7 +197,7 @@ main div#hero.thanks {
 	background-image: url("../images/thanks.webp");
 }
 
-main div#hero h2, main div#hero a {
+main div#hero h2, main div#hero a, main div#hero p {
 	color: white;
 	text-align: center;
 }
@@ -297,14 +297,6 @@ form {
     accent-color: var(--blue);
 }
 
-form legend {
-    font-family: var(--roboto);
-}
-
-form label {
-    font-family: var(--serif);
-}
-
 form fieldset {
     margin: 2rem;
     border: 1px solid var(--blue);
@@ -314,6 +306,7 @@ form fieldset {
 }
 
 form legend {
+	font-family: var(--roboto);
 	position: absolute;
 	top: 1rem;
 	margin: -0.5rem;
@@ -321,20 +314,25 @@ form legend {
 	width: 100%;
 }
 
+form label, form div {
+	font-family: var(--serif);
+    display: block;
+    padding-top: 1rem;
+    color: var(--blue);
+}
+
 form label:first-of-type {
 	margin-top: 1.5rem;
 }
 
 form fieldset.applicant {
-	background: linear-gradient(to bottom,  #F6B801, #F6B801 2rem, transparent 2rem, transparent 100%);
-	
+	background: linear-gradient(to bottom,  #F6B801, #F6B801 2rem, transparent 2rem, transparent 100%);	
 }
 
-form label.applicant, form div {
+form label, form div {
     display: block;
     padding-top: 1rem;
-    color: var(--red);
-    font-size: .8rem;
+    color: var(--blue);
 }
 
 form label.applicant input, form label.applicant select {
@@ -363,17 +361,12 @@ form label.applicant:required:valid {
     border-left: 6px solid var(--gren);;
 }
 
-
 form label.radio {
-    display: block;
-    padding: .75rem 0;
-    color: #555;
-    font-size: .8rem;
+    color: black;
 }
 
 form fieldset.membership {
 	background: linear-gradient(to bottom,  #4CB034, #4CB034 2rem, transparent 2rem, transparent 100%);
-	
 }
 
 form input.submitBtn {
