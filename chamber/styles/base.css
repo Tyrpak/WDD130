@@ -1,3 +1,12 @@
+:root { 
+	--blue: #0257AE;
+    --red: #DA251C;
+	--orange: #F6B801;
+	--green: #4CB034;
+	--serif: 'Source Serif 4', serif;
+	--roboto: 'Roboto', sans-serif;
+}
+
 
 * {
 	margin: 0;
@@ -6,15 +15,15 @@
 }
 
 body {
-	font-family: 'Source Serif 4', serif;
+	font-family: var(--serif);
 }
 
 h1, h2, h3, li {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--roboto);
 }
 
 main ul li {
-	font-family: 'Source Serif 4', serif;
+	font-family: var(--serif);
 }
 
 a {text-decoration: none;}
@@ -22,6 +31,8 @@ a {text-decoration: none;}
 h1 {
 	font-size: 2rem;
 }
+
+/*-----HEADER-----*/
 
 header, footer {
 	align-items: center;
@@ -54,8 +65,10 @@ header span {grid-column: span 2; text-align: right;}
 	cursor: pointer;
 }
 
+/*-----NAV-----*/
+
 nav {
-	background-color: #0257AE;
+	background-color: var(--blue);
 	margin: 0 auto;
     max-width: 800px;
 }
@@ -71,7 +84,7 @@ nav a {
 	color: #fff;
 	text-align: center;
 	padding: 1rem;
-	border: 1px solid #0257AE;
+	border: 1px solid var(--blue);
 }
 
 nav a:hover {
@@ -79,16 +92,16 @@ nav a:hover {
 }
 
 .active {
-	color: #F6B801;
+	color: var(--orange);
 }
 
 
 /* small view navigation */
 #menu {
 	font-size: 1.5rem;
-	border: 1px solid #0257AE;
+	border: 1px solid var(--blue);
 	padding: 3px 7px 6px;
-	background-color: #0257AE;
+	background-color: var(--blue);
 	color: #fff;
 	position: relative;
 	top: 0.5rem;
@@ -107,7 +120,7 @@ nav a:hover {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: #0257AE;
+	background-color: var(--blue);
 	color: #fff;
 }
 .navigation li {
@@ -121,7 +134,7 @@ nav a:hover {
 	color: #fff;
 }
 .navigation li a:hover {
-	background-color: #F6B801;
+	background-color: var(--orange);
 	color: #000;
 	font-weight: 700;
 }
@@ -137,27 +150,27 @@ nav a:hover {
 
 .active::before {
 	content: "*";
-	color: #fff;
+	color: white;
 	margin-top: 1px;
 	margin-right: 3px;
 }
 
 .active:hover:before {
 	content: "*";
-	color: #000;
+	color: black;
 }
 
 
 .stuff {
 	margin: .5em;
 	border: 1px solid rgba(0,0,0,.1);
-	background-color: #F6B801;
+	background-color: var(--orange);
 	max-width: 580px;
 	height: 100vh;
 	
 }
 
-/* main */
+/*-----MAIN-----*/
 
 main {
 	max-width: 800px;
@@ -166,23 +179,32 @@ main {
 
 main div#hero {
 	background-image: url("../images/pmkik.webp");
-	background-color: #0257AE;
+	background-color: var(--blue);
 	height: 180px;
 	display: grid;
 	align-items: center;
 	justify-content: center;
-	border: solid 1px #0257AE;
+	border: solid 1px var(--blue);
+	border-radius: 1em;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+main div#hero.join {
+	background-image: url("../images/thanks.webp");
+}
+
+main div#hero.thanks {
+	background-image: url("../images/thanks.webp");
+}
+
 main div#hero h2, main div#hero a {
-	color: #fff;
+	color: white;
 	text-align: center;
 }
 
-/*main div#hero a {
-    
-}*/
+main div#hero a:hover {
+    color: var(--red);
+}
 
 div#css-grid {
     display: grid;
@@ -190,10 +212,18 @@ div#css-grid {
 	gap: 10px;
 }
 
+/*-----LEFT COLUMN-----*/
+
 .left-section h2 {
 	margin: 10px;
 }
 
+.left-section iframe {
+	border-width: 0;
+	overflow: hidden;
+}
+
+/*-----RIGHT COLUMN-----*/
 
 div.right-pic {
 	padding: 10px;
@@ -203,28 +233,27 @@ div.right-pic img {border-radius: 10px; width: 100%; height: auto; max-width: 60
 
 div.right-pic-caption p {text-align: center;}
 
-.left-section iframe {
-	border-width: 0;
-	overflow: hidden;
-}
+/*-----SECTION-----*/
 
 section.card {
-    border: 1px solid #0257AE;
-    border-radius: 3px;
+    border: 1px solid var(--blue);
+    border-radius: 1em;
     max-width: 600px;
     margin: 10px;
 }
 
 section.card h3 {
-    background-color: #0257AE;
+    background-color: var(--blue);
     color: white;
     padding: 10px;
     text-align: center;
+	border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 }
 
 section.card#current h3 {
-	background-color: #F6B801;	
-	color:#000;
+	background-color: var(--orange);
+	color: black;
 }
 
 section.card#spotlight {
@@ -232,16 +261,19 @@ section.card#spotlight {
 }
 
 section.card#spotlight h3 {
-	background-color: #4CB034;	
-	color:#000;
+	background-color: var(--green);
+	color: black;
 }
 
 section.card#spotlight img {
 	width: 100%;	
+	display: block;
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
 }
 
 section.card#weather h3 {
-	background-color: #DA251C;
+	background-color: var(--red);
 }
 
 section.card ul {
@@ -254,9 +286,117 @@ section.card p {
     padding: 10px;
 }
 
+/*----------- FORM --------------*/
+div#formmessage {
+    color: var(--red);
+    font-size: .8rem;
+    text-align: center;
+}
+
+form {
+    accent-color: var(--blue);
+}
+
+form legend {
+    font-family: var(--roboto);
+}
+
+form label {
+    font-family: var(--serif);
+}
+
+form fieldset {
+    margin: 2rem;
+    border: 1px solid var(--blue);
+    border-radius: 1rem;
+    max-width: 21.5rem;
+	position: relative;
+}
+
+form legend {
+	position: absolute;
+	top: 1rem;
+	margin: -0.5rem;
+    text-align: center;
+	width: 100%;
+}
+
+form label:first-of-type {
+	margin-top: 1.5rem;
+}
+
+form fieldset.applicant {
+	background: linear-gradient(to bottom,  #F6B801, #F6B801 2rem, transparent 2rem, transparent 100%);
+	
+}
+
+form label.applicant, form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--red);
+    font-size: .8rem;
+}
+
+form label.applicant input, form label.applicant select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+form input#rating {
+    -webkit-appearance: auto;
+    padding: 0;
+}
+
+form label.applicant:required {
+    border-left: 6px solid var(--red);;
+}
+
+form label.applicant:required:valid {
+    border-left: 6px solid var(--gren);;
+}
+
+
+form label.radio {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+    font-size: .8rem;
+}
+
+form fieldset.membership {
+	background: linear-gradient(to bottom,  #4CB034, #4CB034 2rem, transparent 2rem, transparent 100%);
+	
+}
+
+form input.submitBtn {
+    border: 1px solid var(--red);
+    border-radius: 1rem;
+    background-color: var(--red);
+    color: white;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    color: var(--red);
+    background-color: white;
+}
+
+/* FOOTER */
+
 footer {
-	background-color: #F6B801;	
-	color:#000;
+	background-color: var(--orange);
+	color: black;
 }
 
 footer .container {

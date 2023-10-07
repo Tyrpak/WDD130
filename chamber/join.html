@@ -31,40 +31,44 @@
     <button id="menu" aria-label="Menu"></button>
     <nav>   
         <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Current Events</a></li>
-            <li><a href="join.html">Contact Us</a></li>
+            <li><a href="#" class="active">Contact Us</a></li>
         </ul>
     </nav>
-    <aside>
-
-    </aside>
     <main>
         <div id="hero">
             <h2>Welcome! <br>How may we help You?</h2>
-            <a href="join.html" class="cta">You can contact us by clicking here!</a>
+            <a href="#" class="cta">You can contact us by clicking here!</a>
         </div>
         <div id="css-grid">
-        <section class="card" id="current">
-            <h3>Current Events</h3>
-            <ul>
-                <li><a href="#">Placeholder</a></li>
-                <li><a href="#">Placeholder</a></li>
-                <li><a href="#">Placeholder</a></li>
-            </ul>
-        </section>
-        <section class="card" id="spotlight">
-            <h3>Spotlights</h3>
-            <img src="images/spotlight-1.webp" alt="Visit our museum">
-        </section>
+            <div id="left-column">
+                <form method="get" action="thankyou.html">
+                    <fieldset class="applicant">
+                        <legend class="applicant">Applicant Information</legend>
+                        <label class="applicant">First Name* <input type="text" name="given-name" id="given-name" title="Please enter your first name" required></label>
+                        <label class="applicant">Last Name* <input type="text" name="family-name" id="family-name" title="Please enter your last name" required></label>
+                        <label class="applicant">Organization Title <input type="text" name="organization-title" id="organization-title" pattern="[A-Za-z\-_\s]]{8}+$/i" title="Please enter your title at your organization"></label>
+                        <label class="applicant">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@\.$" title="Please enter a valid email address" required></label>
+                        <label class="applicant">Phone* <input type="tel" name="tel" id="tel" placeholder="1235551234" title="Please enter your phone number" required></label>
+                        <label class="applicant">Name of the Organization* <input type="text" name="organization" id="organization" title="Please enter the name of your organization" required></label>
+                        <label class="applicant">Description of the Organization <input type="text" name="organization-description" id="organization-description" title="Please enter a description of your organization"></label>
+                    </fieldset>
+                    <fieldset class="membership">
+                        <legend class="membership">Membership Level</legend>
+                        <label class="radio"><input type="radio" name="audience" value="np"> NP Membership</label>
+                        <label class="radio"><input type="radio" name="audience" value="bronze"> Bronze</label>
+                        <label class="radio"><input type="radio" name="audience" value="silver"> Silver</label>
+                        <label class="radio"><input type="radio" name="audience" value="gold"> Gold</label>
+                    </fieldset>
+                    <input type="local-datetime" name="timestamp" id="timestamp">
+                    <input type="submit" value="Join the Chamber of Commerce of Érd" class="submitBtn">
+            </div>
+    
+            <div id="right-column">
 
-        <section class="card" id="weather">
-            <h3>Weather</h3>
-            <p>Temperature</p>
-            <p>Wind</p>
-            <p>Rain</p>
-        </section>
+            </div>
         </div>
     </main>
     <footer>
