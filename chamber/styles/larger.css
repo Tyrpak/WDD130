@@ -56,9 +56,16 @@
     }
 
     main div#hero {
-        background-image: url("../images/pmkik.webp");
         height: 360px;
     }
+
+	div#right-column {
+		display: grid;
+		grid-template-rows: 659px 1fr;
+	}
+	#right-column table {
+		grid-row-start: 2;
+	}
 
     footer #info, footer #disclaimer {
         grid-column: span 1;

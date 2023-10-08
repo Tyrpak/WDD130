@@ -53,11 +53,11 @@
                         <label class="applicant">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@\.$" title="Please enter a valid email address" required></label>
                         <label class="applicant">Phone* <input type="tel" name="tel" id="tel" placeholder="1235551234" title="Please enter your phone number" required></label>
                         <label class="applicant">Name of the Organization* <input type="text" name="organization" id="organization" title="Please enter the name of your organization" required></label>
-                        <label class="applicant">Description of the Organization <input type="textarea" name="organization-description" id="organization-description" title="Please enter a description of your organization"></label>
+                        <label class="applicant">Description of the Organization <textarea type="text" name="organization-description" id="organization-description" title="Please enter a description of your organization"></textarea></label>
                     </fieldset>
                     <fieldset class="membership">
                         <legend class="membership">Membership Level</legend>
-                        <label class="radio"><input type="radio" name="audience" value="np"> NP Membership</label>
+                        <label class="radio"><input type="radio" name="audience" value="np"> For Non-Profit</label>
                         <label class="radio"><input type="radio" name="audience" value="bronze"> Bronze</label>
                         <label class="radio"><input type="radio" name="audience" value="silver"> Silver</label>
                         <label class="radio"><input type="radio" name="audience" value="gold"> Gold</label>
@@ -68,7 +68,20 @@
             </div>
     
             <div id="right-column">
-
+                
+                <table>
+                    <thead>
+                        <tr class="table-name"><td colspan="7" >Membership level benefits</td></tr>
+                        <tr><td>&nbsp;</td><td>Fee / Month</td><td>Advocacy</td><td>Special Events</td><td>Event Discounts</td><td>Advertising</td></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Non-Profit</td><td>Free</td><td>✔️</td><td>❌</td><td>✔️</td><td>❌</td></tr>
+                        <tr><td>Bronze</td><td>5,- $</td><td>✔️</td><td>❌</td><td>❌</td><td>❌</td></tr>
+                        <tr><td>Silver</td><td>10,- $</td><td>✔️</td><td>✔️</td><td>✔️</td><td>❌</td></tr>
+                        <tr><td>Gold</td><td>25,- $</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>  
+                    </tbody>   
+                </table>
+            <p>&nbsp;</p>
             </div>
         </div>
     </main>

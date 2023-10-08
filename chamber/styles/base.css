@@ -308,7 +308,7 @@ form fieldset {
 form legend {
 	font-family: var(--roboto);
 	position: absolute;
-	top: 1rem;
+	top: 1.25rem;
 	margin: -0.5rem;
     text-align: center;
 	width: 100%;
@@ -322,11 +322,11 @@ form label, form div {
 }
 
 form label:first-of-type {
-	margin-top: 1.5rem;
+	margin-top: 1.75rem;
 }
 
 form fieldset.applicant {
-	background: linear-gradient(to bottom,  #F6B801, #F6B801 2rem, transparent 2rem, transparent 100%);	
+	background: linear-gradient(to bottom,  #F6B801, #F6B801 2.5rem, transparent 2.5rem, transparent 100%);	
 }
 
 form label, form div {
@@ -335,7 +335,7 @@ form label, form div {
     color: var(--blue);
 }
 
-form label.applicant input, form label.applicant select {
+form label.applicant input, form label.applicant select, form label.applicant textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -345,7 +345,7 @@ form label.applicant input, form label.applicant select {
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgb(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 form input#rating {
@@ -354,11 +354,11 @@ form input#rating {
 }
 
 form label.applicant:required {
-    border-left: 6px solid var(--red);;
+    border-left: 6px solid var(--red);
 }
 
 form label.applicant:required:valid {
-    border-left: 6px solid var(--gren);;
+    border-left: 6px solid var(--gren);
 }
 
 form label.radio {
@@ -366,7 +366,7 @@ form label.radio {
 }
 
 form fieldset.membership {
-	background: linear-gradient(to bottom,  #4CB034, #4CB034 2rem, transparent 2rem, transparent 100%);
+	background: linear-gradient(to bottom,  #4CB034, #4CB034 2.5rem, transparent 2.5rem, transparent 100%);
 }
 
 form input.submitBtn {
@@ -374,15 +374,75 @@ form input.submitBtn {
     border-radius: 1rem;
     background-color: var(--red);
     color: white;
-    padding: .75rem 1.5rem;
+    padding: .75rem;
     margin: 0 0 2rem 2%;
-    width: 96%;
     max-width: 20rem;
 }
 
 form input.submitBtn:hover {
     color: var(--red);
     background-color: white;
+}
+
+#right-column table {
+	border: 1px solid var(--blue);
+	border-radius: 1rem;
+	border-collapse: separate;
+	border-spacing: 0;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	height: 215px;
+}
+
+#right-column table thead tr:first-child td {
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+  }
+
+#right-column table tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 1rem;
+}
+  
+#right-column table tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 1rem;
+}
+
+#right-column td {
+	padding: 5px;
+	text-align: center;
+}
+
+#right-column thead {
+	background-color: var(--blue);
+	color: white;
+}
+
+#right-column thead tr:last-child td:not(:first-child) {
+	background-color: var(--orange);
+	border-left: 1px solid var(--blue);
+	color: black;
+}
+
+#right-column tbody td {
+	font-family: var(--roboto);
+}
+
+#right-column tbody td:last-child {
+	border-right: var(--blue);
+}
+
+#right-column tbody tr:last-child td {
+	border-bottom: var(--blue);
+}
+
+tbody tr:nth-child(even) {
+background-color: #ccc;
+}
+
+thead {
+	background-color: var(--blue);
+	color: white;
 }
 
 /* FOOTER */
