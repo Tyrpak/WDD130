@@ -221,10 +221,19 @@ section.card p {
     padding: 10px;
 }
 
+img#weather-icon {
+	vertical-align: middle;
+}
+
+p#weather, p#visits {
+	text-align: center;
+}
+
 span.visits {
 	color: navy;
 	font-weight: bolder;
 	font-size: larger;
+	
 }
 
 main iframe {
