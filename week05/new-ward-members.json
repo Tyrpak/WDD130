@@ -1,0 +1,19 @@
+{
+    "familyName" : "Szunyogh",
+    "movedIn" : 2016,
+    "numberOfMembers" : 2,
+    "visitedByBishopric" : true,
+    "members" : [
+      {
+        "name" : "Zsolt Szunyogh",
+        "birthDate" : "1971-04-29",
+        "gender" : "male"
+      },
+      {
+        "name" : "Monika Szunyogh",
+        "age" : 39,
+        "birthDate" : "1977-11-01",
+        "gender" : "female"
+      }
+    ]
+  }

@@ -1,0 +1,54 @@
+header h1, h2, p {
+    text-align: center;
+    display: block;
+}
+
+h2 {
+    padding-top: 1rem;
+}
+
+h2, p {
+    padding-bottom: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+}
+
+div#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 780px) {
+    div#cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1175px) {
+    div#cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1560px) {
+    div#cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: black 1px solid;
+    box-shadow: inset 3px 3px 9px 3px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, 0.4);
+}
