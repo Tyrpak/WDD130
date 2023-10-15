@@ -17,7 +17,7 @@ function showList() {
 	display.classList.remove("grid");
 }
 
-const url = 'https://tyrpak.github.io/canvas-content/latter-day-prophets.json';
+const url = 'https://tyrpak.github.io/wdd230/chamber/data/directory.json';
 
 const cards = document.querySelector('#cards');
 
