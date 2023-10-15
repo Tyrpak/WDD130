@@ -25,17 +25,18 @@ const displayLinks = (weeks) => {
          
     let liWeek = document.createElement('li');
 
-    const linkList = week[links];
+    for (let i = 0; i < Object.keys(week).length; i++) {
+      let linkURL = document.createElement('a');
+   
+      linkURL.setAttribute('href', week.links[i].url);
+      linkURL.innerHTML = `${week.links[i].title} `;
 
-    for (const link of linkList){
-
-        let linkURL = document.createElement('a');
-    
-        linkURL.setAttribute('href', link.url);
-        linkURL.textContent = `${link.title} `;
+      if (i < Object.keys(week).length -1) {
+        linkURL.innerHTML = `${week.links[i].title} | `;
+      };
         
-        liWeek.appendChild(linkURL);
-    };
+      liWeek.appendChild(linkURL);
+    }
     
     ulWeeks.appendChild(liWeek);
     });
