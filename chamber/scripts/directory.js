@@ -19,7 +19,7 @@ function showList() {
 
 const url = 'https://tyrpak.github.io/wdd230/chamber/data/directory.json';
 
-const cards = document.querySelector('#cards');
+const cards = document.querySelector('.grid');
 
 async function getProphetData() {
     const response = await fetch(url);
