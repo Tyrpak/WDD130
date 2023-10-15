@@ -31,10 +31,11 @@
     <button id="menu" aria-label="Menu"></button>
     <nav>   
         <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="index.html" >Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Current Events</a></li>
             <li><a href="join.html">Contact Us</a></li>
+            <li><a href="directory.html" class="active">List of Members</a></li>
         </ul>
     </nav>
     <aside>
@@ -45,27 +46,15 @@
             <h2>Welcome! <br>How may we help You?</h2>
             <a href="join.html" class="cta">You can contact us by clicking here!</a>
         </div>
-        <div id="css-grid">
-        <section class="card" id="current">
-            <h3>Current Events</h3>
-            <ul>
-                <li><a href="#">Placeholder</a></li>
-                <li><a href="#">Placeholder</a></li>
-                <li><a href="#">Placeholder</a></li>
-            </ul>
-        </section>
-        <section class="card" id="spotlight">
-            <h3>Spotlights</h3>
-            <img src="images/spotlight-1.webp" alt="Visit our museum">
-        </section>
-
-        <section class="card" id="weather">
-            <h3>Weather</h3>
-            <p>Temperature</p>
-            <p>Wind</p>
-            <p>Rain</p>
-        </section>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
         </div>
+        <article class="grid">
+
+        
+        </article>
+        
     </main>
     <footer>
         <div class="container">
@@ -84,5 +73,6 @@
     </footer>
     <script src="scripts/getDates.js"> </script>
     <script src="scripts/hamburger.js"> </script>
+    <script src="scripts/directory.js"> </script>
     </body>
 </html>   
