@@ -87,7 +87,7 @@ nav a {
 	border: 1px solid var(--blue);
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
 	border: 1px solid #fff;
 }
 
@@ -136,6 +136,11 @@ nav a:hover {
 .navigation li a:hover {
 	background-color: var(--orange);
 	color: #000;
+	font-weight: 700;
+}
+
+.navigation li a.active {
+	background-color: var(--orange);
 	font-weight: 700;
 }
 

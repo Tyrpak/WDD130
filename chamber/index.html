@@ -38,13 +38,13 @@
             <li><a href="directory.html">List of Members</a></li>
         </ul>
     </nav>
-    <aside>
-
-    </aside>
     <main>
         <div id="hero">
             <h2>Welcome! <br>How may we help You?</h2>
             <a href="join.html" class="cta">You can contact us by clicking here!</a>
+        </div>
+        <div id="banner">
+            <h2>Please visit us on Wednesday 19 PM for our weekly Meet and Greet wih our members!</h2>
         </div>
         <div id="css-grid">
         <section class="card" id="current">
@@ -56,15 +56,20 @@
             </ul>
         </section>
         <section class="card" id="spotlight">
-            <h3>Spotlights</h3>
-            <img src="images/spotlight-1.webp" alt="Visit our museum">
+            <article class="spotlight">
+                <h3>Advertisements of our Members</h3>
+            
+            </article>
         </section>
 
         <section class="card" id="weather">
             <h3>Weather</h3>
-            <p>Temperature</p>
-            <p>Wind</p>
-            <p>Rain</p>
+            <p>Temperature <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p>3-day Forecast <span id="forecast"></span></p>
         </section>
         </div>
     </main>
@@ -85,5 +90,6 @@
     </footer>
     <script src="scripts/getDates.js"> </script>
     <script src="scripts/hamburger.js"> </script>
+    <script src="scripts/weather.js"> </script>
     </body>
 </html>   

@@ -21,41 +21,43 @@ const url = 'https://tyrpak.github.io/wdd230/chamber/data/directory.json';
 
 const cards = document.querySelector('.grid');
 
-async function getProphetData() {
+async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
-    displayProphets(data.prophets);
+    displayMembers(data.members);
   }
   
-getProphetData();
+getMemberData();
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
+const displayMembers = (members) => {
+    members.forEach((member) => {
     
     let card = document.createElement('section');
-    let fullName = document.createElement('h2'); // fill in the blank
-    let portrait = document.createElement('img');
+    let name = document.createElement('h2'); // fill in the blank
+    let sign = document.createElement('img');
     let dateOfBirth = document.createElement('p');
     let birthPlace = document.createElement('p');
 
-    // Build the h2 content out to show the prophet's full name
-    fullName.textContent = `${prophet.name} ${prophet.lastname}`; // fill in the blank
-    // Build the image portrait by setting all the relevant attributes
-    portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // fill in the blank
-    portrait.setAttribute('loading', 'lazy');
-    portrait.setAttribute('width', '340');
-    portrait.setAttribute('height', '440');
+    
+    // Build the image by setting all the relevant attributes
+    sign.setAttribute('src', member.imageurl);
+    sign.setAttribute('alt', `Sign of ${member.name}`); // fill in the blank
+    sign.setAttribute('loading', 'lazy');
+    sign.setAttribute('width', '340');
+    sign.setAttribute('height', '440');
+    // Build the h2 content out to show the member
+    name.textContent = `${member.name}`; // fill in the blank
 
-    dateOfBirth.textContent = `Date of Birth: ${prophet.birthdate}`;   
-    birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;   
+    address.textContent = `Address: ${member.address}`;   
+    phone.textContent = `Phone: ${member.phone}`;   
 
     // Append the section(card) with the created elements
-    card.appendChild(fullName); //fill in the blank
+    card.appendChild(sign);
+    card.appendChild(name); 
     
     card.appendChild(dateOfBirth);
     card.appendChild(birthPlace);
-    card.appendChild(portrait);
+    
     cards.appendChild(card);
   
     });
