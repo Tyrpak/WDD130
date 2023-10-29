@@ -44,7 +44,7 @@
             <a href="join.html" class="cta">You can contact us by clicking here!</a>
         </div>
         <div id="banner">
-            <h2>Please visit us on Wednesday 19 PM for our weekly Meet and Greet wih our members!</h2>
+            <h2>Please visit us on Wednesday 19 PM for our weekly Meet and Greet wih our members! <span class="bannerClose" onClick="bannerButton()">❌</span></h2>
         </div>
         <div id="css-grid">
         <section class="card" id="current">
@@ -56,20 +56,18 @@
             </ul>
         </section>
         <section class="card" id="spotlight">
-            <article class="spotlight">
-                <h3>Advertisements of our Members</h3>
-            
-            </article>
+            <h3>Advertisements of our Members</h3>
+            <article class="spotlight"></article>
         </section>
 
         <section class="card" id="weather">
             <h3>Weather</h3>
-            <p>Temperature <span id="current-temp"></span></p>
+            <p>Temperature: <span id="current-temp"></span></p>
             <figure>
                 <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
+                <span id="current-temp-desc">
             </figure>
-            <p>3-day Forecast <span id="forecast"></span></p>
+            <p>3-day Forecast: <span id="forecast"></span></p>
         </section>
         </div>
     </main>
@@ -91,5 +89,6 @@
     <script src="scripts/getDates.js"> </script>
     <script src="scripts/hamburger.js"> </script>
     <script src="scripts/weather.js"> </script>
+    <script src="scripts/banner.js"> </script>
     </body>
 </html>   

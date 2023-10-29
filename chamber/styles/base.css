@@ -175,6 +175,17 @@ nav a:hover, nav a.active {
 	
 }
 
+/*-----BANNER-----*/
+
+div#banner {
+	background-color: var(--red);
+	border: solid 1px var(--blue);
+	color: white;
+	padding: 1em;
+	border-radius: 1em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*-----MAIN-----*/
 
 main {
@@ -450,6 +461,17 @@ thead {
 	color: white;
 }
 
+/* WEATHER */
+
+#weather figure {
+	display: flex;
+    align-items: center;
+	justify-content: left;
+}
+
+#weather span#forecast span {
+	margin-left: 2em;
+}
 
 /* DIRECTORY */
 
@@ -526,8 +548,8 @@ section h3 {
 }
 
 section p {
-	font-weight: 600;
-	font-size: smaller;
+	/*font-weight: 600;
+	font-size: smaller;*/
 }
 
 section a {
