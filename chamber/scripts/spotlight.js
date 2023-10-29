@@ -1,42 +1,23 @@
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
-
 const directoryUrl = 'https://tyrpak.github.io/wdd230/chamber/data/directory.json';
 
-const cards = document.querySelector('.grid');
+const spotlight = document.querySelector('.spotlight');
 
 async function getMemberData() {
     const response = await fetch(directoryUrl);
     const data = await response.json();
-    displayMembers(data.members);
+    displaySpotlight(data.members);
   }
   
 getMemberData();
 
-const displayMembers = (members) => {
+const displaySpotlight = (members) => {
     members.forEach((member) => {
     
+    if (member.membership == "gold"){
     let card = document.createElement('section');
     let name = document.createElement('h2'); // fill in the blank
     let sign = document.createElement('img');
-    let address = document.createElement('p');
-    let phone = document.createElement('p');
+    let description = document.createElement('p');
 
     
     // Build the image by setting all the relevant attributes
@@ -48,17 +29,17 @@ const displayMembers = (members) => {
     // Build the h2 content out to show the member
     name.innerHTML = `<a href="${member.websiteurl}">${member.name}</a>`; // fill in the blank
 
-    address.textContent = `Address: ${member.address}`;   
-    phone.textContent = `Phone: ${member.phone}`;   
+    description.textContent = `${member.description}`;   
+    
 
     // Append the section(card) with the created elements
     card.appendChild(sign);
     card.appendChild(name); 
     
-    card.appendChild(address);
-    card.appendChild(phone);
+    card.appendChild(description);
     
-    cards.appendChild(card);
-  
+    spotlight.appendChild(card);
+    }
     });
+    
   }

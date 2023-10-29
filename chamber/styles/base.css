@@ -481,6 +481,7 @@ thead {
 	padding: 0.5rem;
 	background-color: var(--orange);
 	text-align: center;
+	
 }
 
 .menu button {
@@ -499,15 +500,20 @@ section {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
+	justify-items: center;
+	grid-auto-rows: 1fr;
 }
 
 .grid section {
 	text-align: center;
+	padding: 0px;
+	
 }
 
-.grid img {
+.grid img, .list img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
+	background-color: #fff;
 }
 
 .grid section > * {
@@ -525,7 +531,7 @@ section {
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 2fr;
 	margin: 0;
 	padding: 0.25rem;
 }
@@ -554,9 +560,25 @@ section p {
 
 section a {
 	font-family: var(--roboto);
-	font-size: 0.85rem;
+	font-size: 1.25rem;
 	color: var(--blue);;
 	letter-spacing: 1.1pt;
+}
+
+/* SPOTLIGHT*/
+
+.spotlight section {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin: 0;
+	padding: 0.25rem;
+	justify-content: center;
+    align-items: center;
+}
+
+.spotlight img {
+	background-color: white;
+	grid-row: span 2;
 }
 
 /* FOOTER */
